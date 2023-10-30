@@ -6,23 +6,46 @@
 //
 
 import SwiftUI
+import CoreData
 
-struct HomeView: View {
+struct HomeSheetView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    //Coisa do CoreData
+    @Environment(\.managedObjectContext) var context //Contexto, DataController
+    //Coisas do MyDataController
+    @ObservedObject var myDataController: MyDataController
+    @FetchRequest(sortDescriptors: []) var onBoarding: FetchedResults<OnboardingData> //Vetor de todas minhas instâncias
+    
+    init(context: NSManagedObjectContext) {
+        self.myDataController = MyDataController(context: context)
+    }
+    
     var body: some View {
         VStack{
-            Titulo1View(text: "Fuja da ilha dos impostos!")
-            Image("Ondas")
-                .padding(.vertical,50)
+            VStack{
+                Titulo1View(text: "Fuja da ilha dos impostos!")
+                Image("Ondas")
+                    .padding(.vertical,50)
+            }
+            VStack(alignment:.leading,spacing:20){
+                HomeViewInformation(imagem: .dinheiro, titulo: "Controle suas Declarações", subtitulo: "Facilite na hora de declarar para a Receita Federal.")
+                HomeViewInformation(imagem: .alerta, titulo: "Nunca caia na malha fina", subtitulo: "Ter uma boa declaração de Imposto de Renda diminui suas chances de cair na malha fina!")
+                Spacer()
+                Button {
+                    myDataController.disableOnboarding(onBoarding: onBoarding[0])
+                    dismiss()
+                } label: {
+                    LabelButtonView(isOn: false, colour: .darkBlue, size: .large, text: "Começar", textColour: .white)
+                }
+            }
+            .frame(maxWidth: 400)
         }
-        VStack{
-            HomeViewInformation(imagem: .dinheiro, titulo: "Controle suas Declarações", subtitulo: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.")
-            HomeViewInformation(imagem: .alerta, titulo: "Nunca caia na malha fina", subtitulo: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.")
-            Spacer()
-        }
-        .frame(maxWidth: 400)
+        .padding(40)
     }
 }
 
 #Preview {
-    HomeView()
+    HomeSheetView(context: DataController().container.viewContext)
 }

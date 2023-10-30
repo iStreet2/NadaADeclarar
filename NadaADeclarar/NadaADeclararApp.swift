@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
+
 
 @main
 struct NadaADeclararApp: App {
+    
+    @StateObject var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(context: dataController.container.viewContext)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

@@ -31,9 +31,9 @@ struct LabelButtonView: View {
                 LabelSymbolView(colour: textColour,imagem: .dinheiro)
             }
         }
-        .frame(width: size == .medium ? 375 : 620, height: size == .medium ? 110 : 110)
+        .frame(width: size == .medium ? 182 : 388, height: size == .medium ? 48 : 48)
         .background(colour == .darkBlue ? Color("DarkBlue") : Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 30))
+        .clipShape(RoundedRectangle(cornerRadius: 15))
         
         
         

@@ -19,7 +19,7 @@ struct LabelTextView: View {
     
     var body: some View {
         Text(text)
-            .font(.custom("CabinetGrotesk-Regular", size: 36))
+            .font(.custom("CabinetGrotesk-Regular", size: 15))
             .fontWeight(.black)
             .multilineTextAlignment(.center)
             .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.white)
