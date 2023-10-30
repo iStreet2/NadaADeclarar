@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct TituloView: View {
+    
+   
     var body: some View {
         Text("Hello, World!")
+            .font(.custom("CabinetGrotesk-Regular", size: 60))
     }
+    
 }
 
 #Preview {
