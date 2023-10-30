@@ -26,6 +26,7 @@
 		8FA52F8F2AF01936006FFCA6 /* LabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA52F8E2AF01936006FFCA6 /* LabelTextView.swift */; };
 		8FA52F912AF01A30006FFCA6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA52F902AF01A30006FFCA6 /* Enums.swift */; };
 		8FF611A82AF01DFD00507DDB /* LabelButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF611A72AF01DFD00507DDB /* LabelButtonView.swift */; };
+		8FF611AA2AF02A1600507DDB /* LabelSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF611A92AF02A1600507DDB /* LabelSymbolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8FA52F8E2AF01936006FFCA6 /* LabelTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextView.swift; sourceTree = "<group>"; };
 		8FA52F902AF01A30006FFCA6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		8FF611A72AF01DFD00507DDB /* LabelButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonView.swift; sourceTree = "<group>"; };
+		8FF611A92AF02A1600507DDB /* LabelSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSymbolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				3B21C98F2AF02A3000FFB324 /* Titulo2View.swift */,
 				3B21C9912AF02BBD00FFB324 /* SubtituloView.swift */,
 				8FA52F8E2AF01936006FFCA6 /* LabelTextView.swift */,
+				8FF611A92AF02A1600507DDB /* LabelSymbolView.swift */,
 				8FF611A72AF01DFD00507DDB /* LabelButtonView.swift */,
 			);
 			path = Components;
@@ -216,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBE880A2AF019FC0084F6BD /* TituloView.swift in Sources */,
+				8FF611AA2AF02A1600507DDB /* LabelSymbolView.swift in Sources */,
 				3B21C9952AF02CCC00FFB324 /* HomeView.swift in Sources */,
 				3BBE880A2AF019FC0084F6BD /* Titulo1View.swift in Sources */,
 				3BBE87FB2AF016B00084F6BD /* ContentView.swift in Sources */,
