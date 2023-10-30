@@ -24,24 +24,20 @@ struct LabelButtonView: View {
     }
     
     var body: some View {
-            
-        HStack(spacing: 20){
-                LabelTextView(text: text, colour: textColour)
-                if isOn {
-                    Image(systemName:
-                            "brazilianrealsign.circle.fill")
-                    .font(.title)
-                    .foregroundStyle(textColour == .darkBlue ? Color("DarkBlue") : Color.white)
-                }
+        
+        HStack(spacing: 30){
+            LabelTextView(text: text, colour: textColour)
+            if isOn {
+                LabelSymbolView(colour: textColour)
             }
-            .padding(.horizontal,size == .medium ? 90 : 12)
-            .padding(.vertical,size == .medium ? 28 : 16)
-            .background(colour == .darkBlue ? Color("DarkBlue") : Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 15))
+        }
+        .frame(width: size == .medium ? 352 : 50, height: size == .medium ? 110 : 50)
+        .background(colour == .darkBlue ? Color("DarkBlue") : Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 25))
         
     }
 }
 
 #Preview {
-    LabelButtonView(isOn: false, colour: .darkBlue, size: .large, text: "Começar",textColour: .white)
+    LabelButtonView(isOn: true, colour: .darkBlue, size: .medium, text: "Label",textColour: .white)
 }

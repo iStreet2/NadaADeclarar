@@ -19,8 +19,9 @@ struct LabelTextView: View {
     
     var body: some View {
         Text(text)
-            .font(.system(size: 26))
-            .fontWeight(.bold)
+            .font(.custom("CabinetGrotesk-Regular", size: 36))
+            .fontWeight(.black)
+            .multilineTextAlignment(.center)
             .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.white)
     }
 }
