@@ -12,3 +12,8 @@ enum ColorEnum {
     case darkBlue
     case white
 }
+
+enum ButtonSize {
+    case medium
+    case large
+}

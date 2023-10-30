@@ -10,17 +10,21 @@ import SwiftUI
 struct LabelTextView: View {
     
     var text: String
+    var colour: ColorEnum
     
-    
-    init(text: String) {
+    init(text: String, colour: ColorEnum) {
         self.text = text
+        self.colour = colour
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(text)
+            .font(.system(size: 26))
+            .fontWeight(.bold)
+            .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.white)
     }
 }
 
 #Preview {
-    LabelTextView(text: "Label")
+    LabelTextView(text: "Label",colour: .darkBlue)
 }
