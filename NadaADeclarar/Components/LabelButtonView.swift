@@ -31,13 +31,15 @@ struct LabelButtonView: View {
                 LabelSymbolView(colour: textColour,imagem: .dinheiro)
             }
         }
-        .frame(width: size == .medium ? 352 : 50, height: size == .medium ? 110 : 50)
+        .frame(width: size == .medium ? 375 : 620, height: size == .medium ? 110 : 110)
         .background(colour == .darkBlue ? Color("DarkBlue") : Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 25))
+        .clipShape(RoundedRectangle(cornerRadius: 30))
+        
+        
         
     }
 }
 
 #Preview {
-    LabelButtonView(isOn: true, colour: .darkBlue, size: .medium, text: "Label",textColour: .white)
+    LabelButtonView(isOn: false, colour: .darkBlue, size: .large, text: "Começar",textColour: .white)
 }
