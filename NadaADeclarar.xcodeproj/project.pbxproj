@@ -51,6 +51,7 @@
 		3BBE87F72AF016B00084F6BD /* NadaADeclarar */ = {
 			isa = PBXGroup;
 			children = (
+				3BBE88062AF017C90084F6BD /* Components */,
 				3BBE87F82AF016B00084F6BD /* NadaADeclararApp.swift */,
 				3BBE87FA2AF016B00084F6BD /* ContentView.swift */,
 				3BBE87FC2AF016B10084F6BD /* Assets.xcassets */,
@@ -65,6 +66,13 @@
 				3BBE87FF2AF016B10084F6BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BBE88062AF017C90084F6BD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
