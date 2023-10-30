@@ -9,17 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init(){
-        for familyName in UIFont.familyNames{
-          print(familyName)
-          for fontName in UIFont.fontNames(forFamilyName: familyName){
-            print("--- \(fontName)")
-          }
-        }
-      }
+    @State var sheet = true
     
     var body: some View {
-        LabelButtonView(isOn: true, colour: .darkBlue, size: .medium, text: "Label", textColour: .white)
+        VStack{
+            
+        }
+        .sheet(isPresented: $sheet, content: {
+            HomeView()
+                .interactiveDismissDisabled()
+        })
+        
     }
 }
 
