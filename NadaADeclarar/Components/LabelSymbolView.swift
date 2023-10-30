@@ -10,20 +10,21 @@ import SwiftUI
 struct LabelSymbolView: View {
     
     var colour: ColorEnum
+    var imagem: ImagesEnum
     
-    init(colour: ColorEnum) {
+    init(colour: ColorEnum, imagem: ImagesEnum) {
         self.colour = colour
+        self.imagem = imagem
     }
     
     var body: some View {
-        Image(systemName:
-                "brazilianrealsign.circle.fill")
+        Image(systemName: imagem == .dinheiro ? "brazilianrealsign.circle.fill" : "exclamationmark.triangle")
         .multilineTextAlignment(.center)
         .font(.system(size: 38))
-        .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.white)
+        .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.blue)
     }
 }
 
 #Preview {
-    LabelSymbolView(colour: .darkBlue)
+    LabelSymbolView(colour: .darkBlue, imagem: .alerta)
 }

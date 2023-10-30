@@ -9,14 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-            VStack{
-                Titulo1View(text: "Fuja da ilha dos impostos!")
-                Image("Ondas")
-                    .padding(.vertical,50)
-                HStack{
-                    Titulo2View(text: "Controle suas declarações")
-                }
-            }
+        VStack{
+            Titulo1View(text: "Fuja da ilha dos impostos!")
+            Image("Ondas")
+                .padding(.vertical,50)
+        }
+        VStack{
+            HomeViewInformation(imagem: .dinheiro, titulo: "Controle suas Declarações", subtitulo: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.")
+            HomeViewInformation(imagem: .alerta, titulo: "Nunca caia na malha fina", subtitulo: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.")
+            Spacer()
+        }
+        .frame(maxWidth: 400)
     }
 }
 

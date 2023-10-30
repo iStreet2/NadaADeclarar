@@ -17,3 +17,9 @@ enum ButtonSize {
     case medium
     case large
 }
+
+enum ImagesEnum {
+    case dinheiro
+    case alerta
+    
+}
