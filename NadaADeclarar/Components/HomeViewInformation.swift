@@ -16,7 +16,7 @@ struct HomeViewInformation: View {
     var body: some View {
         
         HStack{
-            LabelSymbolView(colour: .darkBlue, imagem: imagem)
+            LabelSymbolView(colour: .darkBlue, imagem: imagem, tamanho: .mediumS)
             VStack(alignment:.leading){
                 Titulo2View(text: titulo)
                 SubtituloView(text: subtitulo)

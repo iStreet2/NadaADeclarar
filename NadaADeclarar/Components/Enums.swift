@@ -24,3 +24,9 @@ enum ImagesEnum {
     case cartao
     case nota
 }
+
+enum LabelSize{
+    case smallS
+    case mediumS
+    case largeS
+}

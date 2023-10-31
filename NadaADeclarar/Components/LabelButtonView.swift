@@ -28,7 +28,7 @@ struct LabelButtonView: View {
         HStack(spacing: 30){
             LabelTextView(text: text, colour: textColour)
             if isOn {
-                LabelSymbolView(colour: textColour,imagem: .dinheiro)
+                LabelSymbolView(colour: textColour,imagem: .dinheiro, tamanho: .smallS)
             }
         }
         .frame(width: size == .medium ? 182 : 388, height: size == .medium ? 48 : 48)
