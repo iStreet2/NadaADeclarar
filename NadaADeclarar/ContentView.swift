@@ -24,10 +24,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack{
-            Color("Background")
-                .ignoresSafeArea()
-        }
+        RendimentosView()
         .onAppear{
             if onBoarding[0].enabled{
                 sheet = true
