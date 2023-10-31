@@ -29,10 +29,17 @@ struct HomeSheetView: View {
                 Image("Ondas")
                     .padding(.vertical,50)
             }
-            VStack(alignment:.leading,spacing:20){
-                HomeViewInformation(imagem: .dinheiro, titulo: "Controle suas Declarações", subtitulo: "Facilite na hora de declarar para a Receita Federal.")
-                HomeViewInformation(imagem: .alerta, titulo: "Nunca caia na malha fina", subtitulo: "Ter uma boa declaração de Imposto de Renda diminui suas chances de cair na malha fina!")
+            HStack{
                 Spacer()
+                VStack(alignment:.leading,spacing:20){
+                    
+                    HomeViewInformation(imagem: .dinheiro, titulo: "Controle suas Declarações", subtitulo: "Facilite na hora de declarar para a Receita Federal.")
+                    HomeViewInformation(imagem: .alerta, titulo: "Nunca caia na malha fina", subtitulo: "Ter uma boa declaração de Imposto de Renda diminui\n suas chances de cair na malha fina!")
+                    Spacer()
+                }
+                Spacer()
+            }
+            VStack{
                 Button {
                     myDataController.disableOnboarding(onBoarding: onBoarding[0])
                     dismiss()
@@ -40,9 +47,7 @@ struct HomeSheetView: View {
                     LabelButtonView(isOn: false, colour: .darkBlue, size: .large, text: "Começar", textColour: .white)
                 }
             }
-            .frame(maxWidth: 400)
         }
-        .padding(40)
     }
 }
 

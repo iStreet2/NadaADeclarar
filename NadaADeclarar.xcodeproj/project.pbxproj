@@ -17,7 +17,7 @@
 		3B21C98E2AF025D300FFB324 /* CabinetGrotesk-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B21C9872AF025D300FFB324 /* CabinetGrotesk-Thin.otf */; };
 		3B21C9902AF02A3000FFB324 /* Titulo2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C98F2AF02A3000FFB324 /* Titulo2View.swift */; };
 		3B21C9922AF02BBD00FFB324 /* SubtituloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C9912AF02BBD00FFB324 /* SubtituloView.swift */; };
-		3B21C9952AF02CCC00FFB324 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C9942AF02CCC00FFB324 /* HomeView.swift */; };
+		3B21C9952AF02CCC00FFB324 /* HomeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C9942AF02CCC00FFB324 /* HomeSheetView.swift */; };
 		3B21C9982AF03B0400FFB324 /* HomeViewInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C9972AF03B0400FFB324 /* HomeViewInformation.swift */; };
 		3B21C99B2AF041F700FFB324 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C9992AF041F700FFB324 /* Model.xcdatamodeld */; };
 		3B21C99E2AF042A300FFB324 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C99D2AF042A300FFB324 /* DataController.swift */; };
@@ -44,7 +44,7 @@
 		3B21C9872AF025D300FFB324 /* CabinetGrotesk-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinetGrotesk-Thin.otf"; sourceTree = "<group>"; };
 		3B21C98F2AF02A3000FFB324 /* Titulo2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titulo2View.swift; sourceTree = "<group>"; };
 		3B21C9912AF02BBD00FFB324 /* SubtituloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtituloView.swift; sourceTree = "<group>"; };
-		3B21C9942AF02CCC00FFB324 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3B21C9942AF02CCC00FFB324 /* HomeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSheetView.swift; sourceTree = "<group>"; };
 		3B21C9972AF03B0400FFB324 /* HomeViewInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInformation.swift; sourceTree = "<group>"; };
 		3B21C99A2AF041F700FFB324 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3B21C99D2AF042A300FFB324 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		3B21C9932AF02CA900FFB324 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3B21C9942AF02CCC00FFB324 /* HomeView.swift */,
+				3B21C9942AF02CCC00FFB324 /* HomeSheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			files = (
 				3BBE880A2AF019FC0084F6BD /* Titulo1View.swift in Sources */,
 				8FF611AA2AF02A1600507DDB /* LabelSymbolView.swift in Sources */,
-				3B21C9952AF02CCC00FFB324 /* HomeView.swift in Sources */,
+				3B21C9952AF02CCC00FFB324 /* HomeSheetView.swift in Sources */,
 				3BBE880A2AF019FC0084F6BD /* Titulo1View.swift in Sources */,
 				3BBE87FB2AF016B00084F6BD /* ContentView.swift in Sources */,
 				3BBE87F92AF016B00084F6BD /* NadaADeclararApp.swift in Sources */,
