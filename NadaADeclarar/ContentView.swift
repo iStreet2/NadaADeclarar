@@ -24,6 +24,7 @@ struct ContentView: View {
     }
     
     var body: some View {
+
         RendimentosView()
         .onAppear{
             if onBoarding[0].enabled{

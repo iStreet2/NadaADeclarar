@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct CartaoView: View {
+struct CartaoView: View, Identifiable {
+    var id = UUID()
+    
     
     var valor: String
     var subtitulo: String
