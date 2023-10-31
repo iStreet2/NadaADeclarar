@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct CartaoView: View {
+struct CartaoView: View, Identifiable {
+    var id = UUID()
+    
     
     var valor: String
     var subtitulo: String
@@ -16,7 +18,7 @@ struct CartaoView: View {
     
     var body: some View {
         VStack(alignment:.leading){
-            LabelSymbolView(colour: .white, imagem: imagem)
+            LabelSymbolView(colour: .white, imagem: imagem, tamanho: .largeS)
                 .padding(.bottom,2)
             CartaoTituloView(text: valor)
             CartaoSubtituloView(text: subtitulo)
