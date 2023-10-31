@@ -11,7 +11,7 @@ import CoreData
 struct ContentView: View {
     
     @State var sheet = false
-    
+    @EnvironmentObject var vm: ViewModel
     
     //Coisa do CoreData
     @Environment(\.managedObjectContext) var context //Contexto, DataController

@@ -11,8 +11,7 @@ struct RendimentosView: View {
     
     var options = ["Informe de Rendimentos", "Pagamentos a Terceiro"]
     @State var option = "Informe de Rendimentos"
-    
-    var cartoes = [CartaoView(valor: "1.345.734,34", subtitulo: "Banco do Brasil", imagem: .cartao, tamanho: .large),CartaoView(valor: "235.356,63", subtitulo: "Nubank", imagem: .cartao, tamanho: .large),CartaoView(valor: "52.353,23", subtitulo: "XP Investimentos", imagem: .cartao, tamanho: .large),CartaoView(valor: "245.243,72", subtitulo: "Para: Jaydon Septimus", imagem: .nota, tamanho: .large),CartaoView(valor: "10.234,52", subtitulo: "Para: Lucas Zanatta", imagem: .nota, tamanho: .large),CartaoView(valor: "73.367,24", subtitulo: "Para: Thiago Liporace", imagem: .nota, tamanho: .large),CartaoView(valor: "10,001,01", subtitulo: "Para: Gabriel Vicentin", imagem: .nota, tamanho: .large)]
+    @EnvironmentObject var vm: ViewModel
     
     var body: some View {
         NavigationStack{
@@ -27,9 +26,9 @@ struct RendimentosView: View {
                     }
                     .pickerStyle(.segmented)
                     .padding(.horizontal,250)
-                    ScrollView{
+                    ScrollView(showsIndicators: false){
                         VStack{
-                            ForEach(cartoes){ cartao in
+                            ForEach(vm.cartoes){ cartao in
                                 if option == "Informe de Rendimentos"{
                                     if cartao.imagem == .cartao{
                                         cartao

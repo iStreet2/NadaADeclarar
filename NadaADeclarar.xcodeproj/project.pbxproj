@@ -25,6 +25,7 @@
 		3B74FAF02AF16B5A0026A5AA /* CartaoSubtituloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74FAEF2AF16B5A0026A5AA /* CartaoSubtituloView.swift */; };
 		3B74FAF22AF16CE90026A5AA /* CartaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74FAF12AF16CE90026A5AA /* CartaoView.swift */; };
 		3B74FAF42AF171AC0026A5AA /* RendimentosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74FAF32AF171AC0026A5AA /* RendimentosView.swift */; };
+		3B74FAF82AF18B5C0026A5AA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74FAF72AF18B5C0026A5AA /* ViewModel.swift */; };
 		3BBE87F92AF016B00084F6BD /* NadaADeclararApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE87F82AF016B00084F6BD /* NadaADeclararApp.swift */; };
 		3BBE87FB2AF016B00084F6BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE87FA2AF016B00084F6BD /* ContentView.swift */; };
 		3BBE87FD2AF016B10084F6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBE87FC2AF016B10084F6BD /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		3B74FAEF2AF16B5A0026A5AA /* CartaoSubtituloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoSubtituloView.swift; sourceTree = "<group>"; };
 		3B74FAF12AF16CE90026A5AA /* CartaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoView.swift; sourceTree = "<group>"; };
 		3B74FAF32AF171AC0026A5AA /* RendimentosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendimentosView.swift; sourceTree = "<group>"; };
+		3B74FAF72AF18B5C0026A5AA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3BBE87F52AF016B00084F6BD /* NadaADeclarar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NadaADeclarar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBE87F82AF016B00084F6BD /* NadaADeclararApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadaADeclararApp.swift; sourceTree = "<group>"; };
 		3BBE87FA2AF016B00084F6BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				3B21C99D2AF042A300FFB324 /* DataController.swift */,
 				3B21C99F2AF0431100FFB324 /* MyDataController.swift */,
+				3B74FAF72AF18B5C0026A5AA /* ViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				8FA52F912AF01A30006FFCA6 /* Enums.swift in Sources */,
 				8F52F80B2AF1693A00FE3756 /* CartaoTituloView.swift in Sources */,
 				3B21C99E2AF042A300FFB324 /* DataController.swift in Sources */,
+				3B74FAF82AF18B5C0026A5AA /* ViewModel.swift in Sources */,
 				3B21C9A02AF0431100FFB324 /* MyDataController.swift in Sources */,
 				3B21C9922AF02BBD00FFB324 /* SubtituloView.swift in Sources */,
 				8FA52F8F2AF01936006FFCA6 /* LabelTextView.swift in Sources */,
