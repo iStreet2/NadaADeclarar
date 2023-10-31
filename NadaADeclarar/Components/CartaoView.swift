@@ -17,11 +17,22 @@ struct CartaoView: View, Identifiable {
     var tamanho: ButtonSize
     
     var body: some View {
-        VStack(alignment:.leading){
-            LabelSymbolView(colour: .white, imagem: imagem, tamanho: .largeS)
-                .padding(.bottom,2)
-            CartaoTituloView(text: valor)
-            CartaoSubtituloView(text: subtitulo)
+        HStack{
+            VStack(alignment:.leading){
+                LabelSymbolView(colour: .white, imagem: imagem)
+                    .padding(.bottom,2)
+                CartaoTituloView(text: valor)
+                CartaoSubtituloView(text: subtitulo)
+            }
+           
+            if (tamanho == .large) {
+                Spacer()
+                Image("Ondas 2")
+                    .scaleEffect(1.15)
+                    .padding(.horizontal,40)
+            }
+           
+            
         }
         .padding(20)
         .frame(width: tamanho == .large ? 645 : 344, height: 171,alignment: .leading)

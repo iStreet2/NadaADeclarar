@@ -24,9 +24,8 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack{
-            RendimentosView()
-        }
+
+        RendimentosView()
         .onAppear{
             if onBoarding[0].enabled{
                 sheet = true
