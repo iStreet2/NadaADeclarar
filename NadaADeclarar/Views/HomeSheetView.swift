@@ -48,6 +48,7 @@ struct HomeSheetView: View {
                 }
             }
         }
+        .padding(40)
     }
 }
 
