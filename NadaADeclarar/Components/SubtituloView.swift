@@ -14,7 +14,7 @@ struct SubtituloView: View {
     var body: some View {
         Text(text)
             .font(.custom("CabinetGrotesk-Regular", size: 20))
-            .foregroundStyle(Color("LightGrayCustom"))
+            .foregroundStyle(Color("DarkGrayCustom"))
             .opacity(0.6)
     }
 }

@@ -22,6 +22,7 @@
 		3B21C99B2AF041F700FFB324 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C9992AF041F700FFB324 /* Model.xcdatamodeld */; };
 		3B21C99E2AF042A300FFB324 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C99D2AF042A300FFB324 /* DataController.swift */; };
 		3B21C9A02AF0431100FFB324 /* MyDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21C99F2AF0431100FFB324 /* MyDataController.swift */; };
+		3B74FAF02AF16B5A0026A5AA /* CartaoSubtituloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74FAEF2AF16B5A0026A5AA /* CartaoSubtituloView.swift */; };
 		3BBE87F92AF016B00084F6BD /* NadaADeclararApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE87F82AF016B00084F6BD /* NadaADeclararApp.swift */; };
 		3BBE87FB2AF016B00084F6BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE87FA2AF016B00084F6BD /* ContentView.swift */; };
 		3BBE87FD2AF016B10084F6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBE87FC2AF016B10084F6BD /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		3B21C99A2AF041F700FFB324 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3B21C99D2AF042A300FFB324 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B21C99F2AF0431100FFB324 /* MyDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataController.swift; sourceTree = "<group>"; };
+		3B74FAEF2AF16B5A0026A5AA /* CartaoSubtituloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoSubtituloView.swift; sourceTree = "<group>"; };
 		3BBE87F52AF016B00084F6BD /* NadaADeclarar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NadaADeclarar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBE87F82AF016B00084F6BD /* NadaADeclararApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NadaADeclararApp.swift; sourceTree = "<group>"; };
 		3BBE87FA2AF016B00084F6BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				8FF611A92AF02A1600507DDB /* LabelSymbolView.swift */,
 				8FF611A72AF01DFD00507DDB /* LabelButtonView.swift */,
 				3B21C9972AF03B0400FFB324 /* HomeViewInformation.swift */,
+				3B74FAEF2AF16B5A0026A5AA /* CartaoSubtituloView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				8FF611AA2AF02A1600507DDB /* LabelSymbolView.swift in Sources */,
 				3B21C9952AF02CCC00FFB324 /* HomeSheetView.swift in Sources */,
 				3BBE880A2AF019FC0084F6BD /* Titulo1View.swift in Sources */,
+				3B74FAF02AF16B5A0026A5AA /* CartaoSubtituloView.swift in Sources */,
 				3BBE87FB2AF016B00084F6BD /* ContentView.swift in Sources */,
 				3BBE87F92AF016B00084F6BD /* NadaADeclararApp.swift in Sources */,
 				8FA52F912AF01A30006FFCA6 /* Enums.swift in Sources */,
