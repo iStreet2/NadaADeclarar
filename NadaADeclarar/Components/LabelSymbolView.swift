@@ -22,10 +22,10 @@ struct LabelSymbolView: View {
         
         .multilineTextAlignment(.center)
         .font(.system(size: 38))
-        .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.blue)
+        .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.white)
     }
 }
 
 #Preview {
-    LabelSymbolView(colour: .darkBlue, imagem: .nota)
+    LabelSymbolView(colour: .white, imagem: .nota)
 }
