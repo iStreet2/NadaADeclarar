@@ -15,14 +15,13 @@ struct LabelSymbolView: View {
     
     
     var body: some View {
-        Image(systemName: imagem == .dinheiro ? "brazilianrealsign.circle.fill" : (imagem == .cartao ? "creditcard" : (imagem == .nota ? "banknote.fill" : "exclamationmark.triangle" )))
-        
+        Image(systemName: imagem == .dinheiro ? "brazilianrealsign.circle.fill" : (imagem == .cartao ? "creditcard" : (imagem == .nota ? "banknote.fill" : (imagem == .maisSimbolo ? "plus.circle" : "exclamationmark.triangle" ))))
         .multilineTextAlignment(.center)
-        .font(.system(size: tamanho == .smallS ? 15 : (tamanho == .mediumS ? 34 : 40)))
+        .font(.system(size: tamanho == .smallS ? 17 : (tamanho == .mediumS ? 34 : 40)))
         .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.white)
     }
 }
 
 #Preview {
-    LabelSymbolView(colour: .darkBlue, imagem: .nota, tamanho: .largeS)
+    LabelSymbolView(colour: .darkBlue, imagem: .maisSimbolo, tamanho: .largeS)
 }

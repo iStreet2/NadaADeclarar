@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct RendimentosView: View {
+    @EnvironmentObject var vm: ViewModel
     
     var options = ["Informe de Rendimentos", "Pagamentos a Terceiro"]
     @State var option = "Informe de Rendimentos"
-    @EnvironmentObject var vm: ViewModel
     
     var body: some View {
         NavigationStack{
@@ -26,6 +26,7 @@ struct RendimentosView: View {
                     }
                     .pickerStyle(.segmented)
                     .padding(.horizontal,250)
+                    
                     ScrollView(showsIndicators: false){
                         VStack{
                             ForEach(vm.cartoes){ cartao in
@@ -47,9 +48,7 @@ struct RendimentosView: View {
                 .toolbar{
                     ToolbarItem{
                         Button(action: {}, label: {
-                            Image(systemName: "plus.circle")
-                                .foregroundStyle(Color("DarkBlue"))
-                                .font(.system(size:17))
+                            LabelSymbolView(colour: .darkBlue, imagem: .maisSimbolo, tamanho: .smallS)
                         })
                     }
                 }
@@ -59,4 +58,5 @@ struct RendimentosView: View {
 }
 #Preview {
     RendimentosView()
+        .environmentObject(ViewModel())
 }

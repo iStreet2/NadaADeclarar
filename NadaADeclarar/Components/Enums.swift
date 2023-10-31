@@ -23,6 +23,7 @@ enum ImagesEnum {
     case alerta
     case cartao
     case nota
+    case maisSimbolo
 }
 
 enum LabelSize{
