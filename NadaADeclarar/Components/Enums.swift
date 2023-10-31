@@ -21,5 +21,6 @@ enum ButtonSize {
 enum ImagesEnum {
     case dinheiro
     case alerta
-    
+    case cartao
+    case nota
 }

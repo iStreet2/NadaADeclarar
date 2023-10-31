@@ -18,7 +18,8 @@ struct LabelSymbolView: View {
     }
     
     var body: some View {
-        Image(systemName: imagem == .dinheiro ? "brazilianrealsign.circle.fill" : "exclamationmark.triangle")
+        Image(systemName: imagem == .dinheiro ? "brazilianrealsign.circle.fill" : (imagem == .cartao ? "creditcard" : (imagem == .nota ? "banknote.fill" : "exclamationmark.triangle" )))
+        
         .multilineTextAlignment(.center)
         .font(.system(size: 38))
         .foregroundStyle(colour == .darkBlue ? Color("DarkBlue") : Color.blue)
@@ -26,5 +27,5 @@ struct LabelSymbolView: View {
 }
 
 #Preview {
-    LabelSymbolView(colour: .darkBlue, imagem: .alerta)
+    LabelSymbolView(colour: .darkBlue, imagem: .nota)
 }
